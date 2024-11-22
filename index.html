@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="burger_f"></div>
+      <div class="container">
+        <a href="/"><img src="./assets/images/oie_jpg.png" alt="header" /></a>
+        <div id="header_block">
+          <div id="search">
+            <input type="text" id="search_input" placeholder="Search..." />
+          </div>
+          <div class="sort_cat">
+            <div class="curr_cat">all</div>
+            <div class="category_list"></div>
+          </div>
+          <select class="language-selector">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="ua">Український</option>
+          </select>
+          <button id="burger">
+            <img src="./assets/images/burger.svg" alt="burger" />
+          </button>
+        </div>
+      </div>
+      <div class="burger_menu">
+        <button id="burger_cross">
+          <img src="./assets/images/cross.svg" alt="cross" />
+        </button>
+        <div id="burger_menu_cont">
+          <div class="sort_cat">
+            <div class="curr_cat">all</div>
+            <div class="category_list"></div>
+          </div>
+          <select class="language-selector">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="ua">Український</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div id="sort">
+        <div id="sort_btn">
+          <div data-translate="sort">Sort by</div>
+          <div>
+            <button id="priceD" data-translate="priceD">price drop</button>
+            <button id="priceI" data-translate="priceI">price increase</button>
+            <button id="rating" data-translate="rating">rating</button>
+          </div>
+        </div>
+      </div>
+      <div id="loading"></div>
+      <div id="product_list"></div>
+    </main>
+    <script src="./script.js"></script>
+    <script src="./lang.js"></script>
+  </body>
+</html>
