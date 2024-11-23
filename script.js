@@ -142,7 +142,7 @@ $(document).ready(async function () {
 
     $(".category").on("click", function () {
       const val = $(this).attr("id");
-      $("#curr_cat").text(val);
+      $(".curr_cat:visible").first().text(val);
       let catSortData = {};
       if (val === "all") catSortData = products;
       else catSortData = products.filter((item) => item.category === val);
